@@ -215,7 +215,8 @@ public:
             cur = next_state(cur, c);
         }
 
-        cout<<'\n' << s << '\n';
+        cout << '\n'
+             << s << '\n';
         if (v[cur].state == STATE::final) {
             cout << v[cur].messages.begin()->second;
         }
@@ -243,13 +244,70 @@ public:
         }
     }
 
+    void compressRanges(string &input) {
+        auto trim = [](string s) {
+            size_t l = 0, r = s.size();
+            while (l < r && isspace((unsigned char)s[l]))
+                l++;
+            while (r > l && isspace((unsigned char)s[r - 1]))
+                r--;
+            return s.substr(l, r - l);
+        };
+
+        auto sameGroup = [](char a, char b) {
+            return (islower((unsigned char)a) && islower((unsigned char)b)) ||
+                   (isupper((unsigned char)a) && isupper((unsigned char)b)) ||
+                   (isdigit((unsigned char)a) && isdigit((unsigned char)b));
+        };
+
+        vector<char> chars;
+        stringstream ss(input);
+        string token;
+
+        while (getline(ss, token, ',')) {
+            token = trim(token);
+            if (token.size() == 1)
+                chars.push_back(token[0]);
+        }
+
+        if (chars.empty()) return;
+
+        string result;
+        for (size_t i = 0; i < chars.size();) {
+            char start = chars[i];
+            char end = chars[i];
+            size_t j = i;
+
+            while (j + 1 < chars.size() &&
+                   sameGroup(chars[j], chars[j + 1]) &&
+                   chars[j + 1] == chars[j] + 1) {
+                end = chars[j + 1];
+                j++;
+            }
+
+            if (!result.empty()) result += ", ";
+
+            if (start == end)
+                result += start;
+            else
+                result += "[" + string(1, start) + "-" + string(1, end) + "]";
+
+            i = j + 1;
+        }
+
+        input = result;
+    }
+
     void generate_graph_code() {
-        cout << "digraph G {\n_[style = invisible];\n0[shape = circle, style = filled];\nend[shape = circle, style = filled];\n_ -> 0;\n";
+        cout << "digraph G {\n_[style = invisible];\n0[style = filled];\n_ -> 0;\n";
         int n = v.size();
-        cout << n << '\n';
         vector<vector<string>> a(n, vector<string>(n));
 
         for (int i = 0; i < v.size(); ++i) {
+            if (v[i].state == STATE::final) {
+                auto msg = v[i].messages.begin()->second;
+                cout << i << "[shape=doublecircle" << ",label=\"" << i << ": " << msg << "\"];\n";
+            }
             for (auto &[ch, nxt] : v[i].next) {
                 a[i][nxt] += string((ch == '\\' or ch == '\"') ? "\\" : "") + ch + ',';
                 // cout << i << " -> " << nxt << " [label=\"" << ((ch == '\\' or ch == '\"') ? "\\" : "") << ch << "\"];";
@@ -260,6 +318,8 @@ public:
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
                 if (a[i][j].size()) {
+                    a[i][j].pop_back();
+                    compressRanges(a[i][j]);
                     cout << i << " -> " << j << " [label=\"" << a[i][j] << "\"];" << '\n';
                 }
             }

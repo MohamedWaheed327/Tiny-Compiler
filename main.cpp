@@ -9,14 +9,14 @@ signed main() {
     auto nfa = merge_rules();
     auto dfa = NFA_to_DFA(nfa);
     dfa.minimize();
-    // dfa.test("if");
-    // dfa.test("hellp");
-    // dfa.test("55");
-    // dfa.test("5a");
-    // dfa.test("end");
-    // dfa.test("{\"}\"");
-    // dfa.test("{dsfodf.;dsgf.d;fsdfjn}");
-    // dfa.test("\"{dsfodf.;dsgf.d;fsdfjn}\"");
+    dfa.test("if");
+    dfa.test("hellp");
+    dfa.test("55");
+    dfa.test("5a");
+    dfa.test("end");
+    dfa.test("{\"}\"");
+    dfa.test("{dsfodf.;dsgf.d;fsdfjn}");
+    dfa.test("\"{dsfodf.;dsgf.d;fsdfjn}\"");
     // dfa.display();
-    dfa.generate_graph_code();
+    // dfa.generate_graph_code();
 }

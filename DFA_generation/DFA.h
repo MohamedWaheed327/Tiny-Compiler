@@ -4,7 +4,6 @@
 using namespace std;
 
 class DFA {
-private:
 public:
     struct node {
         STATE state = STATE::normal;
@@ -12,11 +11,6 @@ public:
         set<pair<int, string>> messages;
     };
     vector<node> v;
-
-    DFA() {
-        // v.resize(1);
-        // v[0].state = STATE::start;
-    }
 
     int add_state(STATE state) {
         int num = v.size();
@@ -300,8 +294,9 @@ public:
         input = result;
     }
 
-    void generate_graph_code() {
+    string generate_graph_code() {
         minimize();
+        ostringstream cout;
         cout << "digraph G {\n_[style = invisible];\nrectangle_label [shape=rectangle, label=\"#: represents any character except [a-z][A-Z][0-9]_\\\"(){}+-/*:=<;,\"];\n0[style = filled];\n1[label=\"1: dead state\"];\n_ -> 0;\n";
         int n = v.size();
         vector<vector<string>> a(n, vector<string>(n));
@@ -313,8 +308,6 @@ public:
             }
             for (auto &[ch, nxt] : v[i].next) {
                 a[i][nxt] += string((ch == '\\' or ch == '\"') ? "\\" : "") + ch + ',';
-                // cout << i << " -> " << nxt << " [label=\"" << ((ch == '\\' or ch == '\"') ? "\\" : "") << ch << "\"];";
-                // cout << '\n';
             }
         }
 
@@ -328,6 +321,21 @@ public:
             }
         }
 
-        cout << "\n}";
+        cout << "\n}\n";
+        return cout.str();
+    }
+
+    string generate_cpp_code() {
+        minimize();
+        ostringstream cout;
+        for (int i = 0; i < v.size(); ++i) {
+            auto msg = v[i].messages.begin()->second;
+            cout << (int)v[i].state << " " << (msg.empty()?"327":msg) << " ";
+            for (auto [ch, nxt] : v[i].next) {
+                cout << ch << " " << nxt << " ";
+            }
+            cout << '\n';
+        }
+        return cout.str();
     }
 };

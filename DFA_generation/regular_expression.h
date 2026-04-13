@@ -3,7 +3,6 @@
 using namespace std;
 
 class regular_expression {
-private:
 public:
     string expression;
     vector<bool> is_char;
@@ -13,13 +12,6 @@ public:
     regular_expression() {}
     regular_expression(string expression, vector<bool> is_char, string message = "", int priority = 1E9)
         : expression(expression), is_char(is_char), message(message), priority(priority) {
-        // if (is_char.size() < expression.size()) {
-        //     cout << expression << '\n';
-        //     for (int i = 0; i < is_char.size(); ++i) {
-        //         cout << is_char[i];
-        //     }
-        //     exit(0);
-        // }
         refine();
     }
 

@@ -42,17 +42,6 @@ DFA NFA_to_DFA(NFA nfa) {
         }
     }
 
-    // for (auto &it : char_set) {
-    //     cout << it << '\n';
-    // }
-    // for (int i = 0; i < n; ++i) {
-    //     cout << i << ": ";
-    //     for (auto &it : lambda_closure[i]) {
-    //         cout << it << " ";
-    //     }
-    //     cout << '\n';
-    // }
-
     vector<pair<set<int>, map<char, set<int>>>> Td;
     auto get = [&](set<int> s, char c) {
         set<int> s2;

@@ -1,11 +1,9 @@
 #pragma once
-#include "DFA.h"
+#include "get_DFA.h"
 #include <bits/stdc++.h>
 using namespace std;
 
 void lexer(string s, DFA &dfa) {
-    vector<string> lexemes, tokens;
-
     while (s.size()) {
         int last = -1, cur = 0, n = s.size();
         string last_message;
@@ -25,7 +23,7 @@ void lexer(string s, DFA &dfa) {
                 }
             }
             else if (dfa.v[cur].state == STATE::final) {
-                last_message = dfa.v[cur].messages.begin()->second;
+                last_message = dfa.v[cur].message;
                 last = i;
 
                 if (i == n - 1) {
@@ -40,9 +38,5 @@ void lexer(string s, DFA &dfa) {
                 }
             }
         }
-    }
-
-    for (int i = 0; i < lexemes.size(); ++i) {
-        cout << lexemes[i] << ": " << tokens[i] << '\n';
     }
 }

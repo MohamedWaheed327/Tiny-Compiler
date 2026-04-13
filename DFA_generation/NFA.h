@@ -3,28 +3,23 @@
 using namespace std;
 
 enum STATE {
-    start = 1,
-    normal = 2,
-    final = 4,
-    dead = 8,
+    start,
+    normal,
+    final,
+    dead,
 };
 
 class NFA {
-private:
 public:
     struct node {
         STATE state = STATE::normal;
         map<char, vector<int>> next;
-        // string message = "";
-        // int priority = 0;
-
         set<pair<int, string>> messages;
     };
 
     vector<node> v;
 
     NFA() {
-        // cout <<
         v.resize(1);
         v[0].state = STATE::start;
     }
@@ -45,14 +40,6 @@ public:
         v[i].state = new_state;
     }
 
-    // void change_message(int i, string new_message) {
-    //     v[i].message = new_message;
-    // }
-
-    // void change_priority(int i, int new_priority) {
-    //     v[i].priority = new_priority;
-    // }
-
     void shift(int sh) {
         for (auto &[state, nxt, messages] : v) {
             for (auto &[f, s] : nxt) {
@@ -61,10 +48,6 @@ public:
                 }
             }
         }
-
-        // while (sh--) {
-        //     v.insert(v.begin(), node());
-        // }
     }
 
     vector<int> get_final_states() {
@@ -431,8 +414,9 @@ public:
         v = rebuilt;
     }
 
-    void generate_graph_code() {
+    string generate_graph_code() {
         minimize();
+        ostringstream cout;
         cout << "digraph G {\n_[style = invisible];\nrectangle_label [shape=rectangle, label=\"#: represents any character except [a-z][A-Z][0-9]\\\"(){}+-/*:=<;,\"];\n0[style = filled];\n_ -> 0;\n";
         int n = v.size();
         vector<vector<string>> a(n, vector<string>(n));
@@ -462,5 +446,6 @@ public:
         }
 
         cout << "\n}";
+        return cout.str();
     }
 };

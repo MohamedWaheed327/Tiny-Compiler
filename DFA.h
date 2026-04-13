@@ -53,6 +53,7 @@ public:
     }
 
     int next_state(int cur, char c) {
+        if (v[cur].next.count(c) == 0) c = '#';
         return v[cur].next[c];
     }
 
@@ -300,7 +301,8 @@ public:
     }
 
     void generate_graph_code() {
-        cout << "digraph G {\n_[style = invisible];\n0[style = filled];\n_ -> 0;\n";
+        minimize();
+        cout << "digraph G {\n_[style = invisible];\nrectangle_label [shape=rectangle, label=\"#: represents any character except [a-z][A-Z][0-9]_\\\"(){}+-/*:=<;,\"];\n0[style = filled];\n1[label=\"1: dead state\"];\n_ -> 0;\n";
         int n = v.size();
         vector<vector<string>> a(n, vector<string>(n));
 

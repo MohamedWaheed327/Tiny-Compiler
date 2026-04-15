@@ -1,0 +1,658 @@
+LexicalAnalyzer_autogen/timestamp: \
+	C:/msys64/mingw64/include/_mingw.h \
+	C:/msys64/mingw64/include/_mingw_mac.h \
+	C:/msys64/mingw64/include/_mingw_off_t.h \
+	C:/msys64/mingw64/include/_mingw_secapi.h \
+	C:/msys64/mingw64/include/_mingw_stat64.h \
+	C:/msys64/mingw64/include/_timeval.h \
+	C:/msys64/mingw64/include/assert.h \
+	C:/msys64/mingw64/include/c++/14.2.0/algorithm \
+	C:/msys64/mingw64/include/c++/14.2.0/array \
+	C:/msys64/mingw64/include/c++/14.2.0/atomic \
+	C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
+	C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bit \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/align.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/alloc_traits.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/allocated_ptr.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/charconv.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/concept_check.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/cpp_type_traits.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/enable_special_members.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/exception.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/functional_hash.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/hash_bytes.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/invoke.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/list.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/memoryfwd.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/move.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/new_allocator.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/node_handle.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/ptr_traits.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/range_access.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_construct.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_function.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_list.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_map.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multiset.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_numeric.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_pair.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_set.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/stringfwd.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/utility.h \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/bits/version.h \
+	C:/msys64/mingw64/include/c++/14.2.0/cassert \
+	C:/msys64/mingw64/include/c++/14.2.0/cctype \
+	C:/msys64/mingw64/include/c++/14.2.0/cerrno \
+	C:/msys64/mingw64/include/c++/14.2.0/chrono \
+	C:/msys64/mingw64/include/c++/14.2.0/climits \
+	C:/msys64/mingw64/include/c++/14.2.0/clocale \
+	C:/msys64/mingw64/include/c++/14.2.0/cmath \
+	C:/msys64/mingw64/include/c++/14.2.0/compare \
+	C:/msys64/mingw64/include/c++/14.2.0/concepts \
+	C:/msys64/mingw64/include/c++/14.2.0/cstddef \
+	C:/msys64/mingw64/include/c++/14.2.0/cstdint \
+	C:/msys64/mingw64/include/c++/14.2.0/cstdio \
+	C:/msys64/mingw64/include/c++/14.2.0/cstdlib \
+	C:/msys64/mingw64/include/c++/14.2.0/cstring \
+	C:/msys64/mingw64/include/c++/14.2.0/ctime \
+	C:/msys64/mingw64/include/c++/14.2.0/cwchar \
+	C:/msys64/mingw64/include/c++/14.2.0/debug/assertions.h \
+	C:/msys64/mingw64/include/c++/14.2.0/debug/debug.h \
+	C:/msys64/mingw64/include/c++/14.2.0/exception \
+	C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
+	C:/msys64/mingw64/include/c++/14.2.0/ext/alloc_traits.h \
+	C:/msys64/mingw64/include/c++/14.2.0/ext/atomicity.h \
+	C:/msys64/mingw64/include/c++/14.2.0/ext/concurrence.h \
+	C:/msys64/mingw64/include/c++/14.2.0/ext/numeric_traits.h \
+	C:/msys64/mingw64/include/c++/14.2.0/ext/string_conversions.h \
+	C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
+	C:/msys64/mingw64/include/c++/14.2.0/functional \
+	C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
+	C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
+	C:/msys64/mingw64/include/c++/14.2.0/iterator \
+	C:/msys64/mingw64/include/c++/14.2.0/limits \
+	C:/msys64/mingw64/include/c++/14.2.0/list \
+	C:/msys64/mingw64/include/c++/14.2.0/map \
+	C:/msys64/mingw64/include/c++/14.2.0/memory \
+	C:/msys64/mingw64/include/c++/14.2.0/new \
+	C:/msys64/mingw64/include/c++/14.2.0/numeric \
+	C:/msys64/mingw64/include/c++/14.2.0/optional \
+	C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
+	C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_numeric_defs.h \
+	C:/msys64/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
+	C:/msys64/mingw64/include/c++/14.2.0/ratio \
+	C:/msys64/mingw64/include/c++/14.2.0/set \
+	C:/msys64/mingw64/include/c++/14.2.0/stdexcept \
+	C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
+	C:/msys64/mingw64/include/c++/14.2.0/streambuf \
+	C:/msys64/mingw64/include/c++/14.2.0/string \
+	C:/msys64/mingw64/include/c++/14.2.0/string_view \
+	C:/msys64/mingw64/include/c++/14.2.0/system_error \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/beta_function.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/gamma.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+	C:/msys64/mingw64/include/c++/14.2.0/tr1/special_function_util.h \
+	C:/msys64/mingw64/include/c++/14.2.0/tuple \
+	C:/msys64/mingw64/include/c++/14.2.0/type_traits \
+	C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
+	C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
+	C:/msys64/mingw64/include/c++/14.2.0/unordered_set \
+	C:/msys64/mingw64/include/c++/14.2.0/utility \
+	C:/msys64/mingw64/include/c++/14.2.0/variant \
+	C:/msys64/mingw64/include/c++/14.2.0/vector \
+	C:/msys64/mingw64/include/c++/14.2.0/version \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+	C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+	C:/msys64/mingw64/include/corecrt.h \
+	C:/msys64/mingw64/include/corecrt_startup.h \
+	C:/msys64/mingw64/include/corecrt_stdio_config.h \
+	C:/msys64/mingw64/include/corecrt_wstdlib.h \
+	C:/msys64/mingw64/include/crtdefs.h \
+	C:/msys64/mingw64/include/ctype.h \
+	C:/msys64/mingw64/include/errno.h \
+	C:/msys64/mingw64/include/locale.h \
+	C:/msys64/mingw64/include/process.h \
+	C:/msys64/mingw64/include/pthread.h \
+	C:/msys64/mingw64/include/pthread_compat.h \
+	C:/msys64/mingw64/include/pthread_signal.h \
+	C:/msys64/mingw64/include/pthread_time.h \
+	C:/msys64/mingw64/include/pthread_unistd.h \
+	C:/msys64/mingw64/include/sched.h \
+	C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+	C:/msys64/mingw64/include/sec_api/stdio_s.h \
+	C:/msys64/mingw64/include/sec_api/string_s.h \
+	C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
+	C:/msys64/mingw64/include/sec_api/wchar_s.h \
+	C:/msys64/mingw64/include/signal.h \
+	C:/msys64/mingw64/include/stdio.h \
+	C:/msys64/mingw64/include/string.h \
+	C:/msys64/mingw64/include/swprintf.inl \
+	C:/msys64/mingw64/include/sys/timeb.h \
+	C:/msys64/mingw64/include/sys/types.h \
+	C:/msys64/mingw64/include/time.h \
+	C:/msys64/mingw64/include/vadefs.h \
+	C:/msys64/mingw64/include/wchar.h \
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdbool.h \
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+	D:/college/projects/Compiler/QT/LexicalAnalyzer/CMakeLists.txt \
+	D:/college/projects/Compiler/QT/LexicalAnalyzer/main.cpp \
+	D:/college/projects/Compiler/QT/LexicalAnalyzer/mainwindow.cpp \
+	D:/college/projects/Compiler/QT/LexicalAnalyzer/mainwindow.h \
+	D:/college/projects/Compiler/build/CMakeFiles/3.31.6-msvc6/CMakeCXXCompiler.cmake \
+	D:/college/projects/Compiler/build/CMakeFiles/3.31.6-msvc6/CMakeRCCompiler.cmake \
+	D:/college/projects/Compiler/build/CMakeFiles/3.31.6-msvc6/CMakeSystem.cmake \
+	D:/college/projects/Compiler/build/LexicalAnalyzer_autogen/moc_predefs.h \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeCXXCompiler.cmake.in \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeCompilerIdDetection.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerSupport.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineRCCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeFindBinUtils.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeNinjaFindMake.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeParseImplicitIncludeInfo.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeParseImplicitLinkInfo.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeParseLibraryArchitecture.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeRCCompiler.cmake.in \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeSystem.cmake.in \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestCompilerCommon.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CMakeTestRCCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Borland-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Clang-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Cray-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/GHS-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/GNU-FindBinUtils.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/IAR-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Intel-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/PGI-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/SCO-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/TI-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/TIClang-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/FindThreads.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/FindVulkan.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Windows-Determine-CXX.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q17memory.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q20bit.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q20functional.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q20iterator.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q20memory.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q20type_traits.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q20utility.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q23type_traits.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/q23utility.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qalgorithms.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qalloc.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qanystringview.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qarraydata.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qarraydataops.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qarraydatapointer.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qassert.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qatomic.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qatomic_cxx11.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qbasicatomic.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qbindingstorage.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qbytearray.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qbytearraylist.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qbytearrayview.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qchar.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcompare.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcompare_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcomparehelpers.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcompilerdetection.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qconfig.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qconstructormacros.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcontainerfwd.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcontainerinfo.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcontainertools_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qcontiguouscache.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qdarwinhelpers.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qdatastream.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qdebug.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qendian.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qexceptionhandling.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qflags.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qfloat16.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qforeach.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qfunctionaltools_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qfunctionpointer.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qgenericatomic.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qglobal.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qglobalstatic.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qhash.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qhashfunctions.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qiterable.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qiterator.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qlatin1stringview.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qline.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qlist.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qlogging.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qmalloc.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qmap.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qmargins.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qmath.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qmetacontainer.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qmetatype.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qminmax.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qnamespace.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qnumeric.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qobject.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qobject_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qoverload.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qpair.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qpoint.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qrect.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qrefcount.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qscopedpointer.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qscopeguard.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qset.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qshareddata.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qshareddata_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qsharedpointer.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qsize.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qspan.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstdlibdetection.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstring.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringalgorithms.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringbuilder.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringconverter.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringconverter_base.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringfwd.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringlist.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringmatcher.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringtokenizer.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qstringview.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qswap.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qsysinfo.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qsystemdetection.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtaggedpointer.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtclasshelpermacros.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtconfiginclude.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtconfigmacros.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtcore-config.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtcoreexports.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtcoreglobal.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtdeprecationdefinitions.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtdeprecationmarkers.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtenvironmentvariables.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtextstream.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtformat_impl.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtmetamacros.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtnoop.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtpreprocessorsupport.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtresource.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qttranslation.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qttypetraits.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtversion.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtversionchecks.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtypeinfo.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qtypes.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qutf8stringview.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qvariant.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qvarlengtharray.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qversiontagging.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qxptype_traits.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtCore/qyieldcpu.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qaction.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qbitmap.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qbrush.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qcolor.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qcursor.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qfont.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qfontinfo.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qfontmetrics.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qfontvariableaxis.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qicon.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qimage.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qkeysequence.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qpaintdevice.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qpalette.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qpixmap.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qpolygon.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qregion.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qrgb.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qrgba64.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qtgui-config.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qtransform.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+	D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Config.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtFeature.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtInstallPaths.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
+	D:/programs/QT/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
+	D:/college/projects/Compiler/QT/LexicalAnalyzer/mainwindow.ui \
+	D:/programs/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe

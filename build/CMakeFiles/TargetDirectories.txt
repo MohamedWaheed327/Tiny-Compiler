@@ -1,0 +1,9 @@
+D:/college/projects/Compiler/build/CMakeFiles/LexicalAnalyzer.dir
+D:/college/projects/Compiler/build/CMakeFiles/edit_cache.dir
+D:/college/projects/Compiler/build/CMakeFiles/rebuild_cache.dir
+D:/college/projects/Compiler/build/CMakeFiles/list_install_components.dir
+D:/college/projects/Compiler/build/CMakeFiles/install.dir
+D:/college/projects/Compiler/build/CMakeFiles/install/local.dir
+D:/college/projects/Compiler/build/CMakeFiles/install/strip.dir
+D:/college/projects/Compiler/build/CMakeFiles/LexicalAnalyzer_autogen_timestamp_deps.dir
+D:/college/projects/Compiler/build/CMakeFiles/LexicalAnalyzer_autogen.dir

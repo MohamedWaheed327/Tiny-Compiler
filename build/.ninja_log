@@ -1,0 +1,9 @@
+# ninja log v6
+3	1550	7979677605520488	LexicalAnalyzer_autogen/timestamp	6a366bdab8a20daa
+1562	3348	7979677606403309	CMakeFiles/LexicalAnalyzer.dir/main.cpp.obj	39ef853639d969a8
+3	1550	7979677605520488	LexicalAnalyzer_autogen/mocs_compilation.cpp	6a366bdab8a20daa
+3	1550	7979677605520488	D:/college/projects/Compiler/build/LexicalAnalyzer_autogen/timestamp	6a366bdab8a20daa
+3	1550	7979677605520488	D:/college/projects/Compiler/build/LexicalAnalyzer_autogen/mocs_compilation.cpp	6a366bdab8a20daa
+1557	3327	7979677606354383	CMakeFiles/LexicalAnalyzer.dir/LexicalAnalyzer_autogen/mocs_compilation.cpp.obj	4208fbab72b15a0b
+1567	4567	7979677606453407	CMakeFiles/LexicalAnalyzer.dir/mainwindow.cpp.obj	d17031233a439057
+4568	5033	7979677636454703	LexicalAnalyzer.exe	64c53a1bdb900215

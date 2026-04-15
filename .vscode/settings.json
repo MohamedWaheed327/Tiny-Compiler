@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "D:/college/projects/Compiler/QT/LexicalAnalyzer",
+    "cmake.generator": "Ninja",
+    "cmake.configureSettings": {
+        "CMAKE_PREFIX_PATH": "D:/programs/QT/6.11.0/mingw_64",
+    }
+}

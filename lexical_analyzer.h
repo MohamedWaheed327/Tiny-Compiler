@@ -3,7 +3,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void lexer(string s, DFA &dfa) {
+string lexer(string s, DFA &dfa) {
+    stringstream cout;
     while (s.size()) {
         int last = -1, cur = 0, n = s.size();
         string last_message;
@@ -14,7 +15,7 @@ void lexer(string s, DFA &dfa) {
             if (dfa.v[cur].state == STATE::dead) {
                 if (last == -1) {
                     cout << "ERROR (invalid)";
-                    return;
+                    return cout.str();
                 }
                 else {
                     cout << s.substr(0, last + 1) << ": " << last_message << '\n';
@@ -34,9 +35,11 @@ void lexer(string s, DFA &dfa) {
             else {
                 if (i == n - 1) {
                     cout << "ERROR (incomplete)";
-                    return;
+                    return cout.str();
                 }
             }
         }
     }
+
+    return cout.str();
 }

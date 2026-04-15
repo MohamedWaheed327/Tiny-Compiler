@@ -32,7 +32,7 @@ public:
 DFA get_DFA() {
     DFA dfa;
     fstream istr;
-    istr.open("DFA_construction.txt", ios_base::openmode::_S_in);
+    istr.open("../DFA_construction.txt", ios_base::openmode::_S_in);
 
     while (!istr.eof()) {
         string line;

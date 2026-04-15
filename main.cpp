@@ -10,7 +10,6 @@ signed main() {
         cout << " >>> ";
         string s;
         getline(cin, s);
-        lexer(s, dfa);
-        cout << '\n';
+        cout << lexer(s, dfa) << '\n';
     }
 }

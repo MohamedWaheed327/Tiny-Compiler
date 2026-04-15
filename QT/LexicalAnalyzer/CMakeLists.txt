@@ -44,6 +44,18 @@ endif()
 
 target_link_libraries(LexicalAnalyzer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
+if (WIN32 AND QT_VERSION_MAJOR EQUAL 6)
+    get_target_property(QMAKE_EXECUTABLE Qt6::qmake IMPORTED_LOCATION)
+    get_filename_component(QT_BIN_DIR "${QMAKE_EXECUTABLE}" DIRECTORY)
+
+    add_custom_command(TARGET LexicalAnalyzer POST_BUILD
+        COMMAND "${QT_BIN_DIR}/windeployqt.exe"
+                --no-translations
+                "$<TARGET_FILE:LexicalAnalyzer>"
+        COMMENT "Running windeployqt..."
+    )
+endif()
+
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.

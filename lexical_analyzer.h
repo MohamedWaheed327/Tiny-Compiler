@@ -10,9 +10,23 @@ string lexer(string s, DFA &dfa) {
         string last_message;
 
         for (int i = 0; i < n; ++i) {
+            int cur_copy = cur;
             cur = dfa.next_state(cur, s[i]);
 
             if (dfa.v[cur].state == STATE::dead) {
+                if (s[i] == ' ' || s[i] == '\n') {
+                    if (dfa.v[cur_copy].state == STATE::final) {
+                        cout << s.substr(0, i) << ": " << dfa.v[cur_copy].message << '\n';
+                        s.erase(s.begin(), s.begin() + i + 1);
+                    }
+                    else {
+                        cout << "ERROR (incomplete)";
+                        return cout.str();
+                    }
+
+                    break;
+                }
+
                 if (last == -1) {
                     cout << "ERROR (invalid)";
                     return cout.str();

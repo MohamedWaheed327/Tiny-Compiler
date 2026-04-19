@@ -20,8 +20,9 @@ string lexer(string s, DFA &dfa) {
                         s.erase(s.begin(), s.begin() + i + 1);
                     }
                     else {
-                        cout << "ERROR (incomplete)";
-                        return cout.str();
+                        if (i) cout << s.substr(0, i) << ": " << "ERROR (incomplete)\n";
+                        s.erase(s.begin(), s.begin() + i + 1);
+                        break;
                     }
 
                     break;

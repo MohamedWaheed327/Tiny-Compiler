@@ -18,9 +18,8 @@ public:
     };
     vector<node> v;
 
-    int add_state(node state) {
+    void add_state(node state) {
         v.push_back(state);
-        return v.size() - 1;
     }
 
     int next_state(int cur, char c) {

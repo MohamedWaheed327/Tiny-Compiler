@@ -15,7 +15,7 @@ string lexer(string s, DFA &dfa) {
 
             if (dfa.v[cur].state == STATE::dead) {
                 if (s[i] == ' ' || s[i] == '\n') {
-                    if (dfa.v[cur_copy].state == STATE::final) {
+                    if (!i || dfa.v[cur_copy].state == STATE::final) {
                         if (i) cout << s.substr(0, i) << ": " << dfa.v[cur_copy].message << '\n';
                         s.erase(s.begin(), s.begin() + i + 1);
                     }

@@ -20,17 +20,17 @@ string lexer(string s, DFA &dfa) {
                         s.erase(s.begin(), s.begin() + i + 1);
                     }
                     else {
-                        if (i) cout << s.substr(0, i) << ": " << "ERROR (incomplete)\n";
+                        cout << s.substr(0, i) << ": " << "ERROR (incomplete)\n";
                         s.erase(s.begin(), s.begin() + i + 1);
-                        break;
                     }
 
                     break;
                 }
 
                 if (last == -1) {
-                    cout << "ERROR (invalid)";
-                    return cout.str();
+                    cout << s.substr(0, i + 1) << ": " << "ERROR (invalid)\n";
+                    s.erase(s.begin(), s.begin() + i + 1);
+                    break;
                 }
                 else {
                     cout << s.substr(0, last + 1) << ": " << last_message << '\n';
@@ -49,7 +49,7 @@ string lexer(string s, DFA &dfa) {
             }
             else {
                 if (i == n - 1) {
-                    cout << "ERROR (incomplete)";
+                    cout << s << ": " << "ERROR (incomplete)\n";
                     return cout.str();
                 }
             }

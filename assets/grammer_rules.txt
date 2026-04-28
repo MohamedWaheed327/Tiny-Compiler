@@ -1,5 +1,5 @@
-FILL0 --> comment.FILL|space.FILL|empty
-FILL1 --> comment.FILL|space.FILL|space|comment
+FILL0 --> comment.FILL0|space.FILL0|empty
+FILL1 --> comment.FILL1|space.FILL1|space|comment
 
 IDS --> id,IDS|id
 IDS_AND_LITRALS --> id,IDS_AND_LITRALS|string,IDS_AND_LITRALS|id|string

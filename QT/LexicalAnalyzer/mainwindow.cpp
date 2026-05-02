@@ -22,10 +22,11 @@ void MainWindow::onTokenizeClicked() {
     string temp = "";
     for (int i = 0; i < lexemes.size(); ++i) {
         temp += lexemes[i];
-        temp += " ";
+        temp += " ------> ";
         temp += tokens[i];
         temp += " ";
         temp += " at line " + to_string(line_number[i]);
+        temp += "\n";
     }
 
     QString output = temp.c_str();

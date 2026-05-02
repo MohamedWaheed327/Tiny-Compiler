@@ -24,7 +24,7 @@ tuple<int, string, int> longest_valid_token(const string &s, DFA &dfa) {
 
     for (int i = 0, cur = 0; i < s.size(); ++i) {
         cur = dfa.next_state(cur, s[i]);
-        if (dfa.v[cur].state == STATE::dead && first_dead_index != -1) {
+        if (dfa.v[cur].state == STATE::dead && first_dead_index == -1) {
             first_dead_index = i;
         }
         if (dfa.v[cur].state == STATE::final) {

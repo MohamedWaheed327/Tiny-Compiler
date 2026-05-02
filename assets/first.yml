@@ -1,0 +1,54 @@
+id.IDS`: {id}
+,IDS.IDS`: {comma}
+empty: {empty}
+id.IDS_AND_LITRALS`: {id}
+string.IDS_AND_LITRALS`: {string}
+,IDS_AND_LITRALS.IDS_AND_LITRALS`: {comma}
++: {+}
+-: {-}
+*: {*}
+/: {/}
+<: {<}
+=: {=}
+(MATH_EXPRESSION).MATH_EXPRESSION`: {(}
+id.MATH_EXPRESSION`: {id}
+number.MATH_EXPRESSION`: {number}
+MATH_OP.MATH_EXPRESSION.MATH_EXPRESSION`: {+, -, *, /}
+MATH_EXPRESSION.BOOL_OP.MATH_EXPRESSION: {id, number, (}
+(BOOL_EXPRESSION): {(}
+id:=MATH_EXPRESSION;: {id}
+read.IDS;: {read}
+write.IDS_AND_LITRALS;: {write}
+if.BOOL_EXPRESSION.then.S.end;: {if}
+if.BOOL_EXPRESSION.then.S.else.S.end;: {if}
+repeat.S.until.BOOL_EXPRESSION;: {repeat}
+ASSIGNMENT.S`: {id}
+READ.S`: {read}
+WRITE.S`: {write}
+IF_THEN.S`: {if}
+IF_THEN_ELSE.S`: {if}
+REPEAT.S`: {repeat}
+S.S`: {id, read, write, if, repeat}
+
+# ----------------------------------------------------------------------- #
+IDS: {id}
+IDS`: {comma, empty}
+IDS_AND_LITRALS: {id, string}
+IDS_AND_LITRALS`: {comma, empty}
+MATH_OP: {+, -, *, /}
+BOOL_OP: {<, =}
+
+MATH_EXPRESSION: {id, number, (}
+MATH_EXPRESSION`: {+, -, *, /, empty}
+BOOL_EXPRESSION: {id, number, (}
+
+ASSIGNMENT: {id}
+READ: {read}
+WRITE: {write}
+
+IF_THEN: {if}
+IF_THEN_ELSE: {if}
+REPEAT: {repeat}
+
+S: {id, read, write, if, repeat}
+S`: {id, read, write, if, repeat, empty}

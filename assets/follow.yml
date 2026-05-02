@@ -1,0 +1,21 @@
+IDS: {;}
+IDS`: {;}
+IDS_AND_LITRALS: {;}
+IDS_AND_LITRALS`: {;}
+MATH_OP: {id, number, (}
+BOOL_OP: {id, number, (}
+
+MATH_EXPRESSION: {;, ), <, =, +, -, *, /, then}
+MATH_EXPRESSION`: {;, ), <, =, +, -, *, /, then}
+BOOL_EXPRESSION: {then, ;, )}
+
+ASSIGNMENT: {id, read, write, if, repeat}
+READ: {id, read, write, if, repeat}
+WRITE: {id, read, write, if, repeat}
+
+IF_THEN: {id, read, write, if, repeat}
+IF_THEN_ELSE: {id, read, write, if, repeat}
+REPEAT: {id, read, write, if, repeat}
+
+S: {end, else, until, id, read, write, if, repeat, empty}
+S`: {end, else, until, id, read, write, if, repeat, empty}

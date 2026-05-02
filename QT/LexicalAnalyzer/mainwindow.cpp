@@ -17,6 +17,17 @@ MainWindow::~MainWindow() {
 
 void MainWindow::onTokenizeClicked() {
     QString input = ui->inputText->toPlainText();
-    QString output = lexer(input.toStdString(), dfa).c_str();
+
+    auto [lexemes, tokens, line_number] = lexer(input.toStdString(), dfa);
+    string temp = "";
+    for (int i = 0; i < lexemes.size(); ++i) {
+        temp += lexemes[i];
+        temp += " ";
+        temp += tokens[i];
+        temp += " ";
+        temp += " at line " + to_string(line_number[i]);
+    }
+
+    QString output = temp.c_str();
     ui->outputText->setPlainText(output);
 }

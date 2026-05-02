@@ -1,0 +1,25 @@
+IDS: identifier.IDS_
+IDS_: comma.IDS.IDS_|empty
+IDS_AND_LITRALS: identifier.IDS_AND_LITRALS_|string.IDS_AND_LITRALS_
+IDS_AND_LITRALS_: comma.IDS_AND_LITRALS.IDS_AND_LITRALS_|empty
+MATH_OP: plus_operator|minus_operator|multiply_operator|division_operator
+BOOL_OP: less_than_operator|equal_to_operator
+
+# expressions
+MATH_EXPRESSION: open_bracket_operator.MATH_EXPRESSION.close_bracket_operator.MATH_EXPRESSION_|identifier.MATH_EXPRESSION_|number.MATH_EXPRESSION_
+MATH_EXPRESSION_: MATH_OP.MATH_EXPRESSION.MATH_EXPRESSION_|empty
+BOOL_EXPRESSION: MATH_EXPRESSION.BOOL_OP.MATH_EXPRESSION|open_bracket_operator.BOOL_EXPRESSION.close_bracket_operator
+
+# statemets
+ASSIGNMENT: identifier.assignment_operator.MATH_EXPRESSION.semicolon
+READ: read_keyword.IDS.semicolon
+WRITE: write_keyword.IDS_AND_LITRALS.semicolon
+
+# control statements
+IF_THEN: if_keyword.BOOL_EXPRESSION.then_keyword.S.end_keyword.semicolon
+IF_THEN_ELSE: if_keyword.BOOL_EXPRESSION.then_keyword.S.else_keyword.S.end_keyword.semicolon
+REPEAT: repeat_keyword.S.until_keyword.BOOL_EXPRESSION.semicolon
+
+# program
+S: ASSIGNMENT.S_|READ.S_|WRITE.S_|IF_THEN.S_|IF_THEN_ELSE.S_|REPEAT.S_
+S_: S.S_|empty

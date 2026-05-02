@@ -89,3 +89,4 @@ tuple<vector<string>, vector<string>, vector<int>> lexer(string s, DFA &dfa) {
 
     return tuple{lexemes, tokens, line_number};
 }
+

@@ -379,6 +379,6 @@ D:/college/projects/Compiler/QT/LexicalAnalyzer/mainwindow.h
  mdp:D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/programs/QT/6.11.0/mingw_64/include/QtWidgets/qwidget.h
+D:/college/projects/Compiler/QT/LexicalAnalyzer/main.cpp
 D:/college/projects/Compiler/QT/LexicalAnalyzer/mainwindow.cpp
  uic:./ui_mainwindow.h
-D:/college/projects/Compiler/QT/LexicalAnalyzer/main.cpp

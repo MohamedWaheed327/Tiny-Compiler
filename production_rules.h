@@ -30,114 +30,53 @@ struct production_rule {
     }
 };
 
-/*
-    don't convert identifier if
-    - followed by assignment_operator 
-    - read_keyword before it
-    - write_keyword before it
-    - comma before it
-    - comma after it
-*/
+vector<string> split(string s, char c) { // spaces trimmed
+    s = c + s;
+    vector<string> ret;
+    for (auto it : s) {
+        if (it == c) {
+            ret.push_back("");
+        }
+        else {
+            if (it != ' ') {
+                ret.back().push_back(it);
+            }
+        }
+    }
+    return ret;
+}
 
-vector<production_rule> production_rules = {
-    production_rule("MATH_OP",
-                    {"plus_operator"},
-                    {1}, 0),
-    production_rule("MATH_OP",
-                    {"minus_operator"},
-                    {1}, 0),
-    production_rule("MATH_OP",
-                    {"multiply_operator"},
-                    {1}, 0),
-    production_rule("MATH_OP",
-                    {"division_operator"},
-                    {1}, 0),
-    production_rule("BOOL_OP",
-                    {"less_than_operator"},
-                    {1}, 0),
-    production_rule("BOOL_OP",
-                    {"equal_to_operator"},
-                    {1}, 0),
+vector<production_rule> get_production_rules() {
+    string path = "../assets/grammer_rules.yml";
+    fstream istr;
+    istr.open(path, ios_base::openmode::_S_in);
 
-    production_rule("MATH_EXPRESSION",
-                    {"open_bracket_operator", "MATH_EXPRESSION", "close_bracket_operator"},
-                    {1, 0, 1}, 1),
-    production_rule("MATH_EXPRESSION",
-                    {"identifier"},
-                    {1}, 1),
-    production_rule("MATH_EXPRESSION",
-                    {"number"},
-                    {1}, 1),
-    production_rule("MATH_EXPRESSION",
-                    {"MATH_EXPRESSION", "MATH_OP", "MATH_EXPRESSION"},
-                    {0, 0, 0}, 1),
+    int priority = 0;
+    vector<production_rule> ret;
+    while (!istr.eof()) {
+        string line;
+        getline(istr, line);
 
-    production_rule("BOOL_EXPRESSION",
-                    {"MATH_EXPRESSION", "BOOL_OP", "MATH_EXPRESSION"},
-                    {0, 0, 0}, 2),
-    production_rule("BOOL_EXPRESSION",
-                    {"open_bracket_operator", "BOOL_EXPRESSION", "close_bracket_operator"},
-                    {1, 0, 1}, 2),
-    production_rule("ASSIGNMENT",
-                    {"identifier", "assignment_operator", "MATH_EXPRESSION", "semicolon"},
-                    {1, 1, 0, 1}, 2),
+        if (line.empty()) {
+            priority++;
+            continue;
+        }
 
-    production_rule("IDS",
-                    {"identifier"},
-                    {1}, 3),
-    production_rule("IDS",
-                    {"IDS", "comma", "IDS"},
-                    {0, 1, 0}, 3),
+        auto a = split(line, ':');
+        auto b = split(a[1], '|');
 
-    production_rule("READ",
-                    {"read_keyword", "IDS", "semicolon"},
-                    {1, 0, 1}, 4),
+        for (auto rule_piece : b) {
+            auto c = split(rule_piece, '.');
+            vector<bool> d;
+            for (auto it : c) {
+                d.push_back(islower(it[0]));
+            }
+            ret.push_back(production_rule(a[0], c, d, priority));
+        }
+    }
+    istr.close();
 
-    production_rule("IDS_AND_LITRALS",
-                    {"identifier"},
-                    {1}, 5),
-    production_rule("IDS_AND_LITRALS",
-                    {"string"},
-                    {1}, 5),
-    production_rule("IDS_AND_LITRALS",
-                    {"IDS"},
-                    {0}, 5),
-    production_rule("IDS_AND_LITRALS",
-                    {"IDS_AND_LITRALS", "comma", "IDS_AND_LITRALS"},
-                    {0, 1, 0}, 5),
+    return ret;
+}
 
-    production_rule("WRITE",
-                    {"write_keyword", "IDS_AND_LITRALS", "semicolon"},
-                    {1, 0, 1}, 6),
-
-    production_rule("IF_THEN",
-                    {"if_keyword", "BOOL_EXPRESSION", "then_keyword", "S", "end_keyword", "semicolon"},
-                    {1, 0, 1, 0, 1, 1}, 7),
-    production_rule("IF_THEN_ELSE",
-                    {"if_keyword", "BOOL_EXPRESSION", "then_keyword", "S", "else_keyword", "S", "end_keyword", "semicolon"},
-                    {1, 0, 1, 0, 1, 0, 1, 1}, 7),
-    production_rule("REPEAT",
-                    {"repeat_keyword", "S", "until_keyword", "BOOL_EXPRESSION", "semicolon"},
-                    {1, 0, 1, 0, 1}, 7),
-    production_rule("S",
-                    {"ASSIGNMENT"},
-                    {0}, 7),
-    production_rule("S",
-                    {"READ"},
-                    {0}, 7),
-    production_rule("S",
-                    {"WRITE"},
-                    {0}, 7),
-    production_rule("S",
-                    {"IF_THEN"},
-                    {0}, 7),
-    production_rule("S",
-                    {"IF_THEN_ELSE"},
-                    {0}, 7),
-    production_rule("S",
-                    {"REPEAT"},
-                    {0}, 7),
-    production_rule("S",
-                    {"S", "S"},
-                    {0, 0}, 7),
-};
+vector<production_rule> production_rules = get_production_rules();

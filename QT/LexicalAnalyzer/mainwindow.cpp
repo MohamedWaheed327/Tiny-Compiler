@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
     connect(ui->tokenizeButton, &QPushButton::clicked, this, &MainWindow::onTokenizeClicked);
+    connect(ui->parseButton, &QPushButton::clicked, this, &MainWindow::onParseClicked);
 }
 
 MainWindow::~MainWindow() {
@@ -19,19 +20,25 @@ MainWindow::~MainWindow() {
 void MainWindow::onTokenizeClicked() {
     QString input = ui->inputText->toPlainText();
 
-    // auto [lexemes, tokens, line_number] = lexer(input.toStdString(), dfa);
-    // string temp = "";
-    // for (int i = 0; i < lexemes.size(); ++i) {
-    //     temp += lexemes[i];
-    //     temp += " ------> ";
-    //     temp += tokens[i];
-    //     temp += " ";
-    //     temp += " at line " + to_string(line_number[i]);
-    //     temp += "\n";
-    // }
+    auto [lexemes, tokens, line_number] = lexer(input.toStdString(), dfa);
+    string temp = "";
+    for (int i = 0; i < lexemes.size(); ++i) {
+        temp += lexemes[i];
+        temp += " ------> ";
+        temp += tokens[i];
+        temp += " ";
+        temp += " at line " + to_string(line_number[i]);
+        temp += "\n";
+    }
 
-    bool t = parser(input.toStdString(), dfa);
-    string temp = t ? "valid" : "invalid";
+    QString output = temp.c_str();
+    ui->outputText->setPlainText(output);
+}
+
+void MainWindow::onParseClicked() {
+    QString input = ui->inputText->toPlainText();
+
+    string temp = parser(input.toStdString(), dfa);
 
     QString output = temp.c_str();
     ui->outputText->setPlainText(output);

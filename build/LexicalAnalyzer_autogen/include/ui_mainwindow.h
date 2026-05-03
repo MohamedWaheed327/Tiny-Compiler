@@ -28,6 +28,7 @@ public:
     QWidget *centralwidget;
     QTextEdit *inputText;
     QPushButton *tokenizeButton;
+    QPushButton *parseButton;
     QTextEdit *outputText;
     QMenuBar *menubar;
     QMenu *menuLexical_Analyzer;
@@ -45,7 +46,10 @@ public:
         inputText->setGeometry(QRect(10, 0, 771, 201));
         tokenizeButton = new QPushButton(centralwidget);
         tokenizeButton->setObjectName("tokenizeButton");
-        tokenizeButton->setGeometry(QRect(690, 220, 90, 29));
+        tokenizeButton->setGeometry(QRect(590, 220, 90, 29));
+        parseButton = new QPushButton(centralwidget);
+        parseButton->setObjectName("parseButton");
+        parseButton->setGeometry(QRect(690, 220, 90, 29));
         outputText = new QTextEdit(centralwidget);
         outputText->setObjectName("outputText");
         outputText->setGeometry(QRect(13, 274, 761, 261));
@@ -72,6 +76,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         tokenizeButton->setText(QCoreApplication::translate("MainWindow", "Tokenize", nullptr));
+        parseButton->setText(QCoreApplication::translate("MainWindow", "Parse", nullptr));
         menuLexical_Analyzer->setTitle(QCoreApplication::translate("MainWindow", "Lexical Analyzer", nullptr));
     } // retranslateUi
 

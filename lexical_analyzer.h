@@ -3,6 +3,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+const string LexicalError = "Lexical Error (not a valid tiny token).";
+const string SyntaxError = "Syntax Error (not a valid tiny grammer).";
+
 vector<int> get_line_numbers(const string &s) {
     int n = s.size();
     vector<int> LN(n);
@@ -36,9 +39,9 @@ tuple<int, string, int> longest_valid_token(const string &s, DFA &dfa) {
     return tuple{length, message, first_dead_index};
 }
 
-/// @brief 
-/// @param s 
-/// @param dfa 
+/// @brief
+/// @param s
+/// @param dfa
 /// @return {lexemes, tokens, line_number}
 tuple<vector<string>, vector<string>, vector<int>> lexer(string s, DFA &dfa) {
     auto s_line_number = get_line_numbers(s);
@@ -47,10 +50,10 @@ tuple<vector<string>, vector<string>, vector<int>> lexer(string s, DFA &dfa) {
     vector<int> line_number;
 
     /*
-    * used to add first substring in s with the input length as lexeme
-    * message parameter will be the token of this lexeme
-    * erase this lexeme from s, also erase from s_line_number to keep track of lines
-    */
+     * used to add first substring in s with the input length as lexeme
+     * message parameter will be the token of this lexeme
+     * erase this lexeme from s, also erase from s_line_number to keep track of lines
+     */
     auto resolve = [&](int length, string message, bool print_last = true) {
         if (message.size()) {
             lexemes.push_back(s.substr(0, length - !print_last));
@@ -70,11 +73,11 @@ tuple<vector<string>, vector<string>, vector<int>> lexer(string s, DFA &dfa) {
         else {
             if (first_dead_index != -1) {
                 if (s[first_dead_index] != '\n' and s[first_dead_index] != ' ') {
-                    resolve(first_dead_index + 1, "Lexical Error (not a valid tiny token).");
+                    resolve(first_dead_index + 1, LexicalError);
                 }
                 else {
                     if (0 < first_dead_index) {
-                        resolve(first_dead_index + 1, "Lexical Error (not a valid tiny token).", false);
+                        resolve(first_dead_index + 1, LexicalError, false);
                     }
                     else {
                         resolve(first_dead_index + 1, "");
@@ -82,11 +85,10 @@ tuple<vector<string>, vector<string>, vector<int>> lexer(string s, DFA &dfa) {
                 }
             }
             else {
-                resolve(s.size(), "Lexical Error (not a valid tiny token).");
+                resolve(s.size(), LexicalError);
             }
         }
     }
 
     return tuple{lexemes, tokens, line_number};
 }
-

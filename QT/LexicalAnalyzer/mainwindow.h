@@ -19,6 +19,7 @@ public:
 
 private slots:
     void onTokenizeClicked();
+    void onParseClicked();
 
 private:
     Ui::MainWindow *ui;

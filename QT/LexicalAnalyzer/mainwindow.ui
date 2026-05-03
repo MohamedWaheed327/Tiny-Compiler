@@ -27,7 +27,7 @@
    <widget class="QPushButton" name="tokenizeButton">
     <property name="geometry">
      <rect>
-      <x>690</x>
+      <x>590</x>
       <y>220</y>
       <width>90</width>
       <height>29</height>
@@ -35,6 +35,19 @@
     </property>
     <property name="text">
      <string>Tokenize</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="parseButton">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>220</y>
+      <width>90</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parse</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="outputText">

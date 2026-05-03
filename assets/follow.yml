@@ -1,21 +1,26 @@
-IDS: {;}
-IDS`: {;}
-IDS_AND_LITRALS: {;}
-IDS_AND_LITRALS`: {;}
-MATH_OP: {id, number, (}
-BOOL_OP: {id, number, (}
+MATH_OP: {$, identifier, open_bracket, number}
 
-MATH_EXPRESSION: {;, ), <, =, +, -, *, /, then}
-MATH_EXPRESSION`: {;, ), <, =, +, -, *, /, then}
-BOOL_EXPRESSION: {then, ;, )}
+BOOL_OP: {$, identifier, open_bracket, number}
 
-ASSIGNMENT: {id, read, write, if, repeat}
-READ: {id, read, write, if, repeat}
-WRITE: {id, read, write, if, repeat}
+IDS: {$, semicolon, comma}
+IDS_: {$, semicolon, comma}
 
-IF_THEN: {id, read, write, if, repeat}
-IF_THEN_ELSE: {id, read, write, if, repeat}
-REPEAT: {id, read, write, if, repeat}
+READ: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
 
-S: {end, else, until, id, read, write, if, repeat, empty}
-S`: {end, else, until, id, read, write, if, repeat, empty}
+IDS_AND_LITRALS: {$, semicolon, comma}
+IDS_AND_LITRALS_: {$, semicolon, comma}
+
+WRITE: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
+
+MATH_EXPRESSION: {$, semicolon, close_bracket, less_than_operator, equal_to_operator, plus_operator, minus_operator, multiply_operator, division_operator, then}
+MATH_EXPRESSION_: {$, semicolon, close_bracket, less_than_operator, equal_to_operator, plus_operator, minus_operator, multiply_operator, division_operator, then}
+
+BOOL_EXPRESSION: {$, then, semicolon, close_bracket}
+
+ASSIGNMENT: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
+
+IF_THEN: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
+IF_THEN_ELSE: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
+REPEAT: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
+S: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
+S_: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}

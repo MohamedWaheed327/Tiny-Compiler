@@ -1,21 +1,21 @@
-MATH_OP: {$, identifier, open_bracket, number}
+MATH_OP: {identifier, open_bracket, number}
 
-BOOL_OP: {$, identifier, open_bracket, number}
+BOOL_OP: {identifier, open_bracket, number}
 
-IDS: {$, semicolon, comma}
-IDS_: {$, semicolon, comma}
+IDS: {semicolon, comma}
+IDS_: {semicolon, comma}
 
 READ: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
 
-IDS_AND_LITRALS: {$, semicolon, comma}
-IDS_AND_LITRALS_: {$, semicolon, comma}
+IDS_AND_LITRALS: {semicolon, comma}
+IDS_AND_LITRALS_: {semicolon, comma}
 
 WRITE: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
 
-MATH_EXPRESSION: {$, semicolon, close_bracket, less_than_operator, equal_to_operator, plus_operator, minus_operator, multiply_operator, division_operator, then}
-MATH_EXPRESSION_: {$, semicolon, close_bracket, less_than_operator, equal_to_operator, plus_operator, minus_operator, multiply_operator, division_operator, then}
+MATH_EXPRESSION: {semicolon, close_bracket, less_than_operator, equal_to_operator, plus_operator, minus_operator, multiply_operator, division_operator, then}
+MATH_EXPRESSION_: {semicolon, close_bracket, less_than_operator, equal_to_operator, plus_operator, minus_operator, multiply_operator, division_operator, then}
 
-BOOL_EXPRESSION: {$, then, semicolon, close_bracket}
+BOOL_EXPRESSION: {then, semicolon, close_bracket}
 
 ASSIGNMENT: {$, identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, end_keyword, until_keyword, else_keyword}
 

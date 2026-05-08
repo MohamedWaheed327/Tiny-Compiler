@@ -1,16 +1,22 @@
 MATH_OP: plus_operator|minus_operator|multiply_operator|division_operator
+
 BOOL_OP: less_than_operator|equal_to_operator
-IDS: IDS.comma.IDS|identifier
-IDS_AND_LITRALS: IDS_AND_LITRALS.comma.IDS_AND_LITRALS|string|identifier
 
-MATH_EXPRESSION: MATH_EXPRESSION.MATH_OP.MATH_EXPRESSION|open_bracket.MATH_EXPRESSION.close_bracket|identifier|number
-BOOL_EXPRESSION: MATH_EXPRESSION.BOOL_OP.MATH_EXPRESSION|open_bracket.BOOL_EXPRESSION.close_bracket
+IDS: IDS.IDS|comma.identifier
 
-ASSIGNMENT: identifier.assignment_operator.MATH_EXPRESSION.semicolon
-READ: read_keyword.IDS.semicolon
-WRITE: write_keyword.IDS_AND_LITRALS.semicolon
+READ: read_keyword.identifier.IDS.semicolon|read_keyword.identifier.semicolon
 
-ELSE_OR_EMPTY: else_keyword.S|empty
-IF: if_keyword.BOOL_EXPRESSION.then_keyword.S.ELSE_OR_EMPTY.end_keyword.semicolon
+IDS_AND_LITRALS: IDS_AND_LITRALS.IDS_AND_LITRALS|IDS|comma.string|comma.identifier
+
+WRITE: write_keyword.identifier.IDS_AND_LITRALS.semicolon|write_keyword.string.IDS_AND_LITRALS.semicolon|write_keyword.identifier.semicolon|write_keyword.string.semicolon
+
+MATH_EXPRESSION: MATH_EXPRESSION.MATH_OP.MATH_EXPRESSION|MATH_EXPRESSION.MATH_OP.identifier|identifier.MATH_OP.MATH_EXPRESSION|identifier.MATH_OP.identifier|open_bracket.MATH_EXPRESSION.close_bracket|open_bracket.identifier.close_bracket|number
+
+BOOL_EXPRESSION: MATH_EXPRESSION.BOOL_OP.MATH_EXPRESSION|MATH_EXPRESSION.BOOL_OP.identifier|identifier.BOOL_OP.MATH_EXPRESSION|identifier.BOOL_OP.identifier|open_bracket.BOOL_EXPRESSION.close_bracket
+
+ASSIGNMENT: identifier.assignment_operator.MATH_EXPRESSION.semicolon|identifier.assignment_operator.identifier.semicolon
+
+IF_THEN: if_keyword.BOOL_EXPRESSION.then_keyword.S.end_keyword.semicolon
+IF_THEN_ELSE: if_keyword.BOOL_EXPRESSION.then_keyword.S.else_keyword.S.end_keyword.semicolon
 REPEAT: repeat_keyword.S.until_keyword.BOOL_EXPRESSION.semicolon
-S: S.S|ASSIGNMENT|READ|WRITE|IF|REPEAT
+S: S.S|ASSIGNMENT|READ|WRITE|IF_THEN|IF_THEN_ELSE|REPEAT

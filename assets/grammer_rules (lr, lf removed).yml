@@ -1,8 +1,11 @@
 OPERATION: plus_operator|minus_operator|multiply_operator|division_operator|less_than_operator|equal_to_operator
 
-IDS: identifier.comma.IDS|identifier
-IDS_AND_LITRALS: identifier.comma.IDS_AND_LITRALS|string.comma.IDS_AND_LITRALS|identifier|string
-EXPRESSION: EXPRESSION.OPERATION.EXPRESSION|open_bracket_operator.EXPRESSION.close_bracket_operator|identifier|number
+IDS: identifier.A
+A: comma.IDS|empty
+IDS_AND_LITRALS: identifier.B|string.B
+B: comma.IDS_AND_LITRALS|empty
+EXPRESSION: open_bracket_operator.EXPRESSION.close_bracket_operator.C|identifier.C|number.C
+C: OPERATION.EXPRESSION.C|empty
 
 ASSIGNMENT: identifier.assignment_operator.EXPRESSION.semicolon
 READ: read_keyword.IDS.semicolon

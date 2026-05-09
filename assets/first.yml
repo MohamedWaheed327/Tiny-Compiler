@@ -1,80 +1,55 @@
+empty: {empty}
+
 plus_operator: {plus_operator}
 minus_operator: {minus_operator}
 multiply_operator: {multiply_operator}
 division_operator: {division_operator}
-
 less_than_operator: {less_than_operator}
 equal_to_operator: {equal_to_operator}
 
-comma.identifier.IDS_: {comma}
-IDS.IDS_: {comma}
-empty: {empty}
+identifier.A: {identifier}
+comma.IDS: {comma}
+identifier.B: {identifier}
+string.B: {string}
+comma.IDS_AND_LITRALS: {comma}
 
-read_keyword.identifier.IDS.semicolon: {read_keyword}
-read_keyword.identifier.semicolon: {read_keyword}
+open_bracket_operator.EXPRESSION.close_bracket_operator.C: {open_bracket_operator}
+identifier.C: {identifier}
+number.C: {number}
+OPERATION.EXPRESSION.C: {plus_operator, minus_operator, multiply_operator, division_operator, less_than_operator, equal_to_operator}
 
-IDS.IDS_AND_LITRALS_: {comma}
-comma.string.IDS_AND_LITRALS_: {comma}
-comma.identifier.IDS_AND_LITRALS_: {comma}
-IDS_AND_LITRALS.IDS_AND_LITRALS_: {comma}
+identifier.assignment_operator.EXPRESSION.semicolon: {identifier}
+read_keyword.IDS.semicolon: {read_keyword}
+write_keyword.IDS_AND_LITRALS.semicolon: {write_keyword}
 
-write_keyword.identifier.IDS_AND_LITRALS.semicolon: {write_keyword}
-write_keyword.string.IDS_AND_LITRALS.semicolon: {write_keyword}
-write_keyword.identifier.semicolon: {write_keyword}
-write_keyword.string.semicolon: {write_keyword}
+else_keyword.S: {else_keyword}
+if_keyword.EXPRESSION.then_keyword.S.ELSE_OR_EMPTY.end_keyword.semicolon: {if_keyword}
+repeat_keyword.S.until_keyword.EXPRESSION.semicolon: {repeat_keyword}
+ASSIGNMENT.S: {identifier}
+READ.S: {read_keyword}
+WRITE.S: {write_keyword}
+IF.S: {if_keyword}
+REPEAT.S: {repeat_keyword}
 
-identifier.MATH_OP.MATH_EXPRESSION.MATH_EXPRESSION_: {identifier}
-identifier.MATH_OP.identifier.MATH_EXPRESSION_: {identifier}
-open_bracket.MATH_EXPRESSION.close_bracket.MATH_EXPRESSION_: {open_bracket}
-open_bracket.identifier.close_bracket.MATH_EXPRESSION_: {open_bracket}
-number.MATH_EXPRESSION_: {number}
-MATH_OP.MATH_EXPRESSION.MATH_EXPRESSION_: {plus_operator, minus_operator, multiply_operator, division_operator}
-MATH_OP.identifier.MATH_EXPRESSION_: {plus_operator, minus_operator, multiply_operator, division_operator}
 
-MATH_EXPRESSION.BOOL_OP.MATH_EXPRESSION: {identifier, open_bracket, number}
-MATH_EXPRESSION.BOOL_OP.identifier: {identifier, open_bracket, number}
-identifier.BOOL_OP.MATH_EXPRESSION: {identifier}
-identifier.BOOL_OP.identifier: {identifier}
-open_bracket.BOOL_EXPRESSION.close_bracket: {open_bracket}
 
-identifier.assignment_operator.MATH_EXPRESSION.semicolon: {identifier}
-identifier.assignment_operator.identifier.semicolon: {identifier}
 
-if_keyword.BOOL_EXPRESSION.then_keyword.S.end_keyword.semicolon: {if_keyword}
-if_keyword.BOOL_EXPRESSION.then_keyword.S.else_keyword.S.end_keyword.semicolon: {if_keyword}
-repeat_keyword.S.until_keyword.BOOL_EXPRESSION.semicolon: {repeat_keyword}
-ASSIGNMENT.S_: {identifier}
-READ.S_: {read_keyword}
-WRITE.S_: {write_keyword}
-IF_THEN.S_: {if_keyword}
-IF_THEN_ELSE.S_: {if_keyword}
-REPEAT.S_: {repeat_keyword}
-S.S_: {read_keyword, write_keyword, identifier, if_keyword, repeat_keyword}
 
-# ------------------------------------------------------------------------------ #
-MATH_OP: {plus_operator, minus_operator, multiply_operator, division_operator}
 
-BOOL_OP: {less_than_operator, equal_to_operator}
+OPERATION: {plus_operator, minus_operator, multiply_operator, division_operator, less_than_operator, equal_to_operator}
 
-IDS: {comma}
-IDS_: {comma, empty}
-
-READ: {read_keyword}
-
-IDS_AND_LITRALS: {comma}
-IDS_AND_LITRALS_: {comma, empty}
-
-WRITE: {write_keyword}
-
-MATH_EXPRESSION: {identifier, open_bracket, number}
-MATH_EXPRESSION_: {plus_operator, minus_operator, multiply_operator, division_operator, empty}
-
-BOOL_EXPRESSION: {identifier, open_bracket, number}
+IDS: {identifier}
+A: {comma, empty}
+IDS_AND_LITRALS: {identifier, string}
+B: {comma, empty}
+EXPRESSION: {identifier, open_bracket_operator, number}
+C: {plus_operator, minus_operator, multiply_operator, division_operator, less_than_operator, equal_to_operator, empty}
 
 ASSIGNMENT: {identifier}
+READ: {read_keyword}
+WRITE: {write_keyword}
 
-IF_THEN: {if_keyword}
-IF_THEN_ELSE: {if_keyword}
+ELSE_OR_EMPTY: {else_keyword, empty}
+IF: {if_keyword}
 REPEAT: {repeat_keyword}
-S: {read_keyword, write_keyword, identifier, if_keyword, repeat_keyword}
-S_: {read_keyword, write_keyword, identifier, if_keyword, repeat_keyword, empty}
+S: {identifier, read_keyword, write_keyword, if_keyword, repeat_keyword, empty}

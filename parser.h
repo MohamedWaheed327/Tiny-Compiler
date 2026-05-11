@@ -81,12 +81,23 @@ string parser(string s, DFA &dfa) {
                     tokens.erase(tokens.begin());
                     lexemes.erase(lexemes.begin());
                     line_number.erase(line_number.begin());
+                    continue;
                 }
                 else {
                     add_error(last, "Syntax", last_s);
                     last = line_number[0], last_s = lexemes[0];
                     continue;
                 }
+            }
+
+            if (dq.empty() && front == "S" && tokens.size() && pr.pattern == vector<string>{"empty"}) {
+                add_error(line_number[0], "Syntax", lexemes[0]);
+                last = line_number[0], last_s = lexemes[0];
+                dq.push_front(front);
+                tokens.erase(tokens.begin());
+                lexemes.erase(lexemes.begin());
+                line_number.erase(line_number.begin());
+                continue;
             }
 
             dq.insert(dq.begin(), pr.pattern.begin(), pr.pattern.end());
@@ -104,7 +115,7 @@ string parser(string s, DFA &dfa) {
         }
     }
 
-    while (dq.size() && count(first[{dq.front()}].begin(), first[{dq.front()}].end(), "empty")) {
+    while (dq.size() && isupper(dq.front()[0]) && count(first[{dq.front()}].begin(), first[{dq.front()}].end(), "empty")) {
         dq.pop_front();
     }
 

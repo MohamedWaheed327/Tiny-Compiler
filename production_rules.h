@@ -142,9 +142,11 @@ map<pair<string, string>, production_rule> construct_parsing_table() {
         }
         else {
             auto st = follow[pr.name];
-            for (auto it : st) {
-                if (parsing_table.count({pr.name, it}) == 0)
-                    parsing_table[{pr.name, it}] = production_rule("synch", {});
+            if (pr.name != "S") {
+                for (auto it : st) {
+                    if (parsing_table.count({pr.name, it}) == 0)
+                        parsing_table[{pr.name, it}] = production_rule("synch", {});
+                }
             }
         }
     }

@@ -31,16 +31,26 @@ string parser(string s, DFA &dfa) {
 
     stringstream ss;
     int last = 1;
-    vector<int> lines;
+    string last_s = "";
+    auto add_error = [&](int line_number, string type, string text_in_code) {
+        ss << text_in_code << '\n';
+        ss << type << " Error at line: " << line_number << '\n';
+        ss << "---------------------------------------------------------------\n";
+    };
 
     while (tokens.size()) {
-
-        if (tokens[0] == LexicalError) {
-            ss << line_number[0] << " lex" << '\n';
-            last = line_number[0];
+        if (tokens[0] == "Error") {
+            add_error(line_number[0], "Lexical", lexemes[0]);
+            last = line_number[0], last_s = lexemes[0];
             tokens.erase(tokens.begin());
+            lexemes.erase(lexemes.begin());
             line_number.erase(line_number.begin());
             continue;
+        }
+
+        if (dq.empty()) {
+            add_error(line_number[0], "Syntax", lexemes[0]);
+            break;
         }
 
         auto front = dq.front();
@@ -51,10 +61,12 @@ string parser(string s, DFA &dfa) {
         if (isupper(front[0])) {
 
             if (parsing_table.count({front, tokens.front()}) == 0) {
-                ss << line_number[0] << '\n';
+                add_error(line_number[0], "Syntax", lexemes[0]);
+                last = line_number[0], last_s = lexemes[0];
+
                 dq.push_front(front);
-                last = line_number[0];
                 tokens.erase(tokens.begin());
+                lexemes.erase(lexemes.begin());
                 line_number.erase(line_number.begin());
                 continue;
             }
@@ -63,14 +75,16 @@ string parser(string s, DFA &dfa) {
 
             if (pr.name == "synch") {
                 if (front == "S") {
-                    ss << line_number[0] << '\n';
+                    add_error(line_number[0], "Syntax", lexemes[0]);
+                    last = line_number[0], last_s = lexemes[0];
                     dq.push_front(front);
-                    last = line_number[0];
                     tokens.erase(tokens.begin());
+                    lexemes.erase(lexemes.begin());
                     line_number.erase(line_number.begin());
                 }
                 else {
-                    ss << last << '\n';
+                    add_error(last, "Syntax", last_s);
+                    last = line_number[0], last_s = lexemes[0];
                     continue;
                 }
             }
@@ -79,11 +93,13 @@ string parser(string s, DFA &dfa) {
         }
         else {
             if (tokens.front() != front) {
-                ss << last << '\n';
+                add_error(last, "Syntax", last_s);
+                last = line_number[0], last_s = lexemes[0];
                 continue;
             }
-            last = line_number[0];
+            last = line_number[0], last_s = lexemes[0];
             tokens.erase(tokens.begin());
+            lexemes.erase(lexemes.begin());
             line_number.erase(line_number.begin());
         }
     }
@@ -92,64 +108,9 @@ string parser(string s, DFA &dfa) {
         dq.pop_front();
     }
 
-    return ss.str().size() ? ss.str() : "ok";
+    if (dq.size()) {
+        add_error(last, "Syntax", last_s);
+    }
 
-    // return (dq.size() ? "insuccessful" : "successful");
-
-    // int n = tokens.size();
-    // vector<string> program = tokens;
-
-    // for (int p = 0; p <= 9; ++p) {
-    //     vector<production_rule> production_rules_;
-    //     for (auto production_rule : production_rules) {
-    //         if (production_rule.priority == p) {
-    //             production_rules_.push_back(production_rule);
-    //         }
-    //     }
-
-    // redo:;
-    //     for (int l = 0; l < program.size(); ++l) {
-    //         for (int r = l; r < program.size(); ++r) {
-    //             for (auto production_rule : production_rules_) {
-    //                 if (production_rule.match(program, l, r)) {
-    //                     int last_line = line_number[r];
-    //                     string temp = accumulate(lexemes.begin() + l, lexemes.begin() + r + 1, string(""), [&](string a, string b) { return a + b; });
-
-    //                     program.erase(program.begin() + l, program.begin() + r + 1);
-    //                     line_number.erase(line_number.begin() + l, line_number.begin() + r + 1);
-    //                     lexemes.erase(lexemes.begin() + l, lexemes.begin() + r + 1);
-
-    //                     program.insert(program.begin() + l, production_rule.name);
-    //                     line_number.insert(line_number.begin() + l, last_line);
-    //                     lexemes.insert(lexemes.begin() + l, temp);
-
-    //                     goto redo;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
-    // if (program == vector<string>{"S"}) {
-    //     return "successful";
-    // }
-    // else {
-    //     stringstream ss;
-    //     for (int i = 0; i < program.size(); ++i) {
-    //         if (program[i] == LexicalError) {
-    //             ss << lexemes[i] << '\n';
-    //             ss << LexicalError << " at line " << line_number[i] << '\n';
-    //             ss << "--------------------------------------------------------------------\n";
-    //         }
-    //         else {
-    //             if (program[i] != "S") {
-    //                 ss << lexemes[i] << '\n';
-    //                 ss << SyntaxError << " at line " << line_number[i] << '\n';
-    //                 ss << "--------------------------------------------------------------------\n";
-    //             }
-    //         }
-    //     }
-
-    //     return ss.str();
-    // }
+    return ss.str().size() ? ss.str() : "OK";
 }

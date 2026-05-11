@@ -3,9 +3,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const string LexicalError = "Lexical Error (not a valid tiny token).";
-const string SyntaxError = "Syntax Error (not a valid tiny grammer).";
-
 vector<int> get_line_numbers(const string &s) {
     int n = s.size();
     vector<int> LN(n);
@@ -73,11 +70,11 @@ tuple<vector<string>, vector<string>, vector<int>> lexer(string s, DFA &dfa) {
         else {
             if (first_dead_index != -1) {
                 if (s[first_dead_index] != '\n' and s[first_dead_index] != ' ') {
-                    resolve(first_dead_index + 1, LexicalError);
+                    resolve(first_dead_index + 1, "Error");
                 }
                 else {
                     if (0 < first_dead_index) {
-                        resolve(first_dead_index + 1, LexicalError, false);
+                        resolve(first_dead_index + 1, "Error", false);
                     }
                     else {
                         resolve(first_dead_index + 1, "");
@@ -85,7 +82,7 @@ tuple<vector<string>, vector<string>, vector<int>> lexer(string s, DFA &dfa) {
                 }
             }
             else {
-                resolve(s.size(), LexicalError);
+                resolve(s.size(), "Error");
             }
         }
     }

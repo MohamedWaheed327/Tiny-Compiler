@@ -133,18 +133,20 @@ map<pair<string, string>, production_rule> construct_parsing_table() {
                 parsing_table[{pr.name, it}] = pr;
             }
         }
-        if (st.count("empty")) {
-            auto st = follow[pr.name];
-            for (auto it : st) {
-                if (parsing_table.count({pr.name, it}) == 0 or pr.pattern != vector<string>{"empty"} or parsing_table[{pr.name, it}].name == "synch")
-                    parsing_table[{pr.name, it}] = pr;
+        if (pr.name != "S") {
+            if (st.count("empty")) {
+                auto st = follow[pr.name];
+                for (auto it : st) {
+                    if (parsing_table.count({pr.name, it}) == 0 or pr.pattern != vector<string>{"empty"} or parsing_table[{pr.name, it}].name == "synch")
+                        parsing_table[{pr.name, it}] = pr;
+                }
             }
-        }
-        else {
-            auto st = follow[pr.name];
-            for (auto it : st) {
-                if (parsing_table.count({pr.name, it}) == 0)
-                    parsing_table[{pr.name, it}] = production_rule("synch", {});
+            else {
+                auto st = follow[pr.name];
+                for (auto it : st) {
+                    if (parsing_table.count({pr.name, it}) == 0)
+                        parsing_table[{pr.name, it}] = production_rule("synch", {});
+                }
             }
         }
     }
@@ -158,14 +160,17 @@ map<pair<string, string>, production_rule> parsing_table = construct_parsing_tab
 
 x := (x + (x + (y - x / (x / 5- x * 5))));
 read x, y, z;
-write x, y, z;
+write x, y,"مرحبا بالعالم", z, "hello world";
 
 if ((x * x = 5 * 5)) then
     f := 5;
     repeat
+        repeat
+            x := x + 1;
+        until 5 < x;
     until x = 5;
 
-    x := (x + (x + (y - x / (x / 5- x * 5))));
+    x := (x + (x + (y - x / (x / 5 - x * 5))));
     read x, y, z;
     write x, y, z;
 

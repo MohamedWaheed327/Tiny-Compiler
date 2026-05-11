@@ -133,20 +133,18 @@ map<pair<string, string>, production_rule> construct_parsing_table() {
                 parsing_table[{pr.name, it}] = pr;
             }
         }
-        if (pr.name != "S") {
-            if (st.count("empty")) {
-                auto st = follow[pr.name];
-                for (auto it : st) {
-                    if (parsing_table.count({pr.name, it}) == 0 or pr.pattern != vector<string>{"empty"} or parsing_table[{pr.name, it}].name == "synch")
-                        parsing_table[{pr.name, it}] = pr;
-                }
+        if (st.count("empty")) {
+            auto st = follow[pr.name];
+            for (auto it : st) {
+                if (parsing_table.count({pr.name, it}) == 0 or pr.pattern != vector<string>{"empty"} or parsing_table[{pr.name, it}].name == "synch")
+                    parsing_table[{pr.name, it}] = pr;
             }
-            else {
-                auto st = follow[pr.name];
-                for (auto it : st) {
-                    if (parsing_table.count({pr.name, it}) == 0)
-                        parsing_table[{pr.name, it}] = production_rule("synch", {});
-                }
+        }
+        else {
+            auto st = follow[pr.name];
+            for (auto it : st) {
+                if (parsing_table.count({pr.name, it}) == 0)
+                    parsing_table[{pr.name, it}] = production_rule("synch", {});
             }
         }
     }

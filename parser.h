@@ -17,7 +17,9 @@ string parser(string s, DFA &dfa) {
                 c.push_back(line_number[i]);
             }
             else {
-                a.back() += lexemes[i];
+                if (a.size()) {
+                    a.back() += lexemes[i];
+                }
             }
         }
         lexemes = a;

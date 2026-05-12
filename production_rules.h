@@ -158,22 +158,24 @@ map<pair<string, string>, production_rule> parsing_table = construct_parsing_tab
 
 /*
 
-x := (x + (x + (y - x / (x / 5- x * 5))));
-read x, y, z;
+x := (x + (x + (y - x / (x / 5- x * 5)))); {this is comment}
+read x, y, z; {this is comment}
 write x, y,"مرحبا بالعالم", z, "hello world";
+{this is comment}
 
-if ((x * x = 5 * 5)) then
+if ((x * x = 5 * 5)) then {this is comment}
     f := 5;
-    repeat
+    repeat {this is comment}
         repeat
-            x := x + 1;
+            x := x + 1; {this is comment}
         until 5 < x;
-    until x = 5;
+    until x = 5; {this is comment}
 
-    x := (x + (x + (y - x / (x / 5 - x * 5))));
-    read x, y, z;
-    write x, y, z;
+    x := (x + (x + (y - x / (x / 5 - x * 5)))); {this is comment}
+    read x, y, z; {this is comment}
+    write x, y, z; {this is comment}
 
+    {this is comment}
     if x = x then
         x := (x + (x + (y - x / (x / 5- x * 5))));
         read x, y, z;
@@ -183,7 +185,8 @@ if ((x * x = 5 * 5)) then
         read x, y, z;
         write x, y, z;
     end;
-    write "nikfndiofn rfdnfonertif", x, y, "jbjbfdf";
+    write "nikfndiofn rfdnfonertif", x, y, "jbjbfdf"; {this is comment}
 end;
+
 
 */
